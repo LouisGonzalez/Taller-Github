@@ -8,12 +8,12 @@ package com.mycompany.proyectogithub.operaciones;
  *
  * @author Luis
  */
-public class Resta extends Operacion {
+public class Multiplicacion extends Operacion{
+    
     @Override
     public void buildOperation(double num1, double num2) {
-        double result = num1 - num2;
-        System.out.println("El resultado de la resta es: "+result);
+        double result = num1 * num2;
+        System.out.println("El resultado de la multiplicacion es: "+result);
     }
-    
-}
 
+}

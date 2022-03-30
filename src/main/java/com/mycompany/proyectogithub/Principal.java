@@ -5,6 +5,7 @@
 package com.mycompany.proyectogithub;
 
 import com.mycompany.proyectogithub.admin.Delegado;
+import com.mycompany.proyectogithub.operaciones.Multiplicacion;
 import com.mycompany.proyectogithub.operaciones.Resta;
 import com.mycompany.proyectogithub.operaciones.Suma;
 import java.util.Scanner;
@@ -27,7 +28,8 @@ public class Principal {
         
         System.out.println("Menu de operaciones:\n"
                 + "1. Suma\n"
-                + "2. Resta\n");
+                + "2. Resta\n"
+                + "3. Multiplicacion\n");
         int menu = scanner.nextInt();
         switch(menu){
             case 1:
@@ -36,6 +38,8 @@ public class Principal {
             case 2:
                 del.executeTask(new Resta(), num1, num2);
                 break;
+            case 3:
+                del.executeTask(new Multiplicacion(), num1, num2);
             default:
                 System.out.println("Opcion invalida");
                 break;
